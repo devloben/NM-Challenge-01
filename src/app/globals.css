@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  background-color: black;
-  padding: 40px;
-  color: white;
+  @apply bg-gray-500 text-white;
 }
