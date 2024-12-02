@@ -18,10 +18,13 @@ cd NM-Challenge-01
 #choisir la branche 02-Blog
 git checkout 02-Blog
 
+#installer le dépendances
+pnpm install
+
 #démarrer le serveur
-npm run dev
-# or
 pnpm dev
+# or
+npm run dev
 ```
 Enfin, rendez-vous sur l'url [http://localhost:3000](http://localhost:3000) avec le navigateur de votre choix pour voir le résultat.
 
