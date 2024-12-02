@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Next-Initial-Mike",
-  description: "Initialisation next app by Mike",
+  title: "NM-Challenge-01",
+  description:
+    "Mise en place de la structure de base d'une projet Next, React, TypeScript, Tailwind",
 };
 
 export default function RootLayout({
@@ -15,8 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr">
+      <body>
+        <Navbar />
+
+        {children}
+      </body>
     </html>
   );
 }
